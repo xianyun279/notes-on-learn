@@ -1,0 +1,1 @@
+import{_ as a,c as t,o as e,a as n}from"./app.fa499967.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"css/animation.md","lastUpdated":null}'),s={name:"css/animation.md"},o=n("p",null,"animation",-1),r=[o];function c(i,_,d,l,p,m){return e(),t("div",null,r)}var h=a(s,[["render",c]]);export{u as __pageData,h as default};

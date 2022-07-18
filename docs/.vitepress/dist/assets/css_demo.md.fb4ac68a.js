@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as s,a}from"./app.ecfa7657.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"css/demo.md"}'),o={name:"css/demo.md"},c=a("p",null,"\u8FD9\u91CC\u662Fcss\u6848\u4F8B",-1),r=[c];function n(d,_,p,i,m,l){return s(),t("div",null,r)}var h=e(o,[["render",n]]);export{u as __pageData,h as default};

@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as s,a}from"./app.fa499967.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"css/index.md","lastUpdated":null}'),n={name:"css/index.md"},o=a("p",null,"css\u9996\u9875",-1),c=[o];function r(d,_,i,l,p,m){return s(),t("div",null,c)}var x=e(n,[["render",r]]);export{u as __pageData,x as default};

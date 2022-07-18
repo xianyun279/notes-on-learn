@@ -1,43 +1,50 @@
 
 
+
+module.exports = {
+    lang: 'en-US',
+    title: '闲云',
+    description: 'Vite & Vue powered static site generator.',
+
+    lastUpdated: true,
+
+    themeConfig: {
+        logo: '/public/logo.jpg',
+        nav: nav(),
+        search: false,
+        sidebar: {
+            '/css/': sidebarCss(),
+            '/life/': sidebarLife(),
+        },
+    }
+}
+
+
 function nav() {
     return [
-        { text: '随笔', link: '/' },
-        { text: 'Css', link: '/css/demo', activeMatch: '/css/' },
-        { text: 'JS', link: '/js/test', activeMatch: '/js/' },
+        { text: 'LIFE', link: '/life/index', activeMatch: '/life/' }, // life首页
+        { text: 'CSS', link: '/css/index', activeMatch: '/css/' }, // life首页
     ]
 }
 
 function sidebarCss() {
     return [
         {
-            text: 'Css',
+            text: '常用',
             collapsible: true,
             items: [
                 { text: '案例', link: '/css/demo' },
-                { text: '其他', link: '/guide/getting-started' },
+                { text: 'SVG', link: '/css/svg' },
+                { text: 'Animation', link: '/css/animation' },
             ]
         },
         {
-            text: 'Svg',
+            text: '随笔',
             collapsible: true,
             items: [
-                { text: 'Markdown', link: '/guide/markdown' },
-                { text: 'Asset Handling', link: '/guide/asset-handling' },
+                { text: '此刻想法', link: '/css/thought' },
             ]
-        }
-    ]
-}
-
-function sidebarJS() {
-    return [
-        {
-            text: 'JS',
-            items: [
-                { text: 'promise', link: '/js/promise' },
-                { text: '继承', link: '/js/gen' },
-            ]
-        }
+        },
     ]
 }
 
@@ -45,51 +52,11 @@ function sidebarLife() {
     return [
         {
             text: '随笔',
+            collapsible: true,
             items: [
-                { text: '随手记', link: '/life/xianyun' },
-                // { text: '过往', link: '/life/test' },
+                { text: '随手记', link: '/life/note' },
+                { text: '感想', link: '/life/thought' },
             ]
         }
     ]
-}
-
-module.exports = {
-    lang: 'en-US',
-    title: '闲云',
-    description: '个人博客',
-    // lastUpdated: true,
-	base: '/',
-    themeConfig: {
-        nav: nav(),
-        sidebar: {
-            '/CSS/': sidebarCss(),
-            '/JS/': sidebarJS(),
-            '/': sidebarLife(),
-        },
-
-        // editLink: {
-        //     pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
-        //     text: 'Edit this page on GitHub'
-        // },
-
-        // socialLinks: [
-        //     { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-        // ],
-
-        // footer: {
-        //     message: 'Released under the MIT License.',
-        //     copyright: 'Copyright © 2019-present Evan You'
-        // },
-
-        // algolia: {
-        //     appId: '8J64VVRP8K',
-        //     apiKey: 'a18e2f4cc5665f6602c5631fd868adfd',
-        //     indexName: 'vitepress'
-        // },
-
-        // carbonAds: {
-        //     code: 'CEBDT27Y',
-        //     placement: 'vuejsorg'
-        // }
-    }
 }
