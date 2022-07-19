@@ -14,6 +14,8 @@ module.exports = {
         search: false,
         sidebar: {
             '/css/': sidebarCss(),
+            '/js/': sidebarJs(),
+            '/react/': sidebarReact(),
             '/life/': sidebarLife(),
         },
     }
@@ -22,8 +24,10 @@ module.exports = {
 
 function nav() {
     return [
-        { text: 'LIFE', link: '/life/index', activeMatch: '/life/' }, // life首页
-        { text: 'CSS', link: '/css/index', activeMatch: '/css/' }, // life首页
+        { text: 'JS', link: '/js/index', activeMatch: '/js/' },
+        { text: 'CSS', link: '/css/index', activeMatch: '/css/' },
+        { text: 'React', link: '/react/index', activeMatch: '/react/' },
+        { text: 'LIFE', link: '/life/index', activeMatch: '/life/' },
     ]
 }
 
@@ -45,6 +49,30 @@ function sidebarCss() {
                 { text: '此刻想法', link: '/css/thought' },
             ]
         },
+    ]
+}
+
+function sidebarJs() {
+    return [
+        {
+            text: '常用',
+            collapsible: true,
+            items: [
+                { text: 'js-utils', link: '/js/utils' },
+            ]
+        }
+    ]
+}
+
+function sidebarReact() {
+    return [
+        {
+            text: '常用',
+            collapsible: true,
+            items: [
+                { text: 'js-utils', link: '/react/details' },
+            ]
+        }
     ]
 }
 
