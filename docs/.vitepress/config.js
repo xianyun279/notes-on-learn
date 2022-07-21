@@ -9,7 +9,7 @@ module.exports = {
     lastUpdated: true,
 
     themeConfig: {
-        logo: '/public/logo.jpg',
+        logo: '/logo.jpg',
         nav: nav(),
         search: false,
         sidebar: {

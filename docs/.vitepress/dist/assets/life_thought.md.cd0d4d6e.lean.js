@@ -1,1 +1,0 @@
-import{_ as t,c as e,o as a,a as o}from"./app.fa499967.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"life/thought.md","lastUpdated":null}'),s={name:"life/thought.md"},r=o("p",null,"\u611F\u60F3",-1),n=[r];function c(l,_,d,i,p,h){return a(),e("div",null,n)}var m=t(s,[["render",c]]);export{f as __pageData,m as default};
