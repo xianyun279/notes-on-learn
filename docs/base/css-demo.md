@@ -37,3 +37,25 @@ border: none;
 border-radius: 50px;
 }
 ```
+
+### 缺角边框
+
+<img src='/public/css/demo/rect.png'/>
+
+```
+// 右上角三角是渐变背景图上的，
+// clip-path截取要显示的范围
+<div class="inner">inner</div>
+
+.inner{
+    width: 270px;
+    height: 120px;
+    position: absolute;
+    top: 114px;
+    left: 13px;
+    padding: 10px 18px;
+    background: linear-gradient(225deg,red 12px,rgba(20,30,40,0.25) 0);
+    clip-path: polygon(0 0,94% 0,100% 13%,100% 100%,0 100%);
+    border: 1px solid red;
+}
+```

@@ -3,7 +3,7 @@
 
 module.exports = {
     lang: 'en-US',
-    title: '闲云',
+    title: '活在当下',
     description: 'Vite & Vue powered static site generator.',
 
     lastUpdated: true,
@@ -23,9 +23,8 @@ module.exports = {
 
 function nav() {
     return [
-        { text: 'base', link: '/base/index' },
-        { text: 'framework', link: '/framework/index' },
-        // { text: 'React', link: '/react/index', activeMatch: '/react/' },
+        { text: '基础', link: '/base/index' },
+        { text: '框架', link: '/framework/index' },
         { text: 'LIFE', link: '/life/index' },
     ]
 }
@@ -36,7 +35,7 @@ function sidebarBase() {
             text: '基础',
             collapsible: true,
             items: [
-                { text: '案例', link: '/base/css-demo' },
+                { text: 'css-demo', link: '/base/css-demo' },
                 { text: 'js-utils', link: '/base/js-utils' },
             ]
         },
