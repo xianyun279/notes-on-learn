@@ -13,9 +13,8 @@ module.exports = {
         nav: nav(),
         search: false,
         sidebar: {
-            '/css/': sidebarCss(),
-            '/js/': sidebarJs(),
-            '/react/': sidebarReact(),
+            '/base/': sidebarBase(),
+            '/framework/': sidebarFramework(),
             '/life/': sidebarLife(),
         },
     }
@@ -24,53 +23,33 @@ module.exports = {
 
 function nav() {
     return [
-        { text: 'JS', link: '/js/index', activeMatch: '/js/' },
-        { text: 'CSS', link: '/css/index', activeMatch: '/css/' },
-        { text: 'React', link: '/react/index', activeMatch: '/react/' },
-        { text: 'LIFE', link: '/life/index', activeMatch: '/life/' },
+        { text: 'base', link: '/base/index' },
+        { text: 'framework', link: '/framework/index' },
+        // { text: 'React', link: '/react/index', activeMatch: '/react/' },
+        { text: 'LIFE', link: '/life/index' },
     ]
 }
 
-function sidebarCss() {
+function sidebarBase() {
     return [
         {
-            text: '常用',
+            text: '基础',
             collapsible: true,
             items: [
-                { text: '案例', link: '/css/demo' },
-                { text: 'SVG', link: '/css/svg' },
-                { text: 'Animation', link: '/css/animation' },
-            ]
-        },
-        {
-            text: '随笔',
-            collapsible: true,
-            items: [
-                { text: '此刻想法', link: '/css/thought' },
+                { text: '案例', link: '/base/css-demo' },
+                { text: 'js-utils', link: '/base/js-utils' },
             ]
         },
     ]
 }
 
-function sidebarJs() {
+function sidebarFramework() {
     return [
         {
-            text: '常用',
+            text: '框架',
             collapsible: true,
             items: [
-                { text: 'js-utils', link: '/js/utils' },
-            ]
-        }
-    ]
-}
-
-function sidebarReact() {
-    return [
-        {
-            text: '常用',
-            collapsible: true,
-            items: [
-                { text: 'js-utils', link: '/react/details' },
+                { text: 'test-svg', link: '/framework/svg' },
             ]
         }
     ]
