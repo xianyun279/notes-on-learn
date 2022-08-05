@@ -3,7 +3,7 @@
 
 module.exports = {
     lang: 'en-US',
-    title: '活在当下',
+    title: '此刻的唯一',
     description: 'Vite & Vue powered static site generator.',
 
     lastUpdated: true,
@@ -48,7 +48,8 @@ function sidebarFramework() {
             text: '框架',
             collapsible: true,
             items: [
-                { text: 'test-svg', link: '/framework/svg' },
+                { text: 'Qwik', link: '/framework/Qwik' },
+                
             ]
         }
     ]
@@ -62,6 +63,7 @@ function sidebarLife() {
             items: [
                 { text: '随手记', link: '/life/note' },
                 { text: '感想', link: '/life/thought' },
+                { text: '强者', link: '/life/强者' },
             ]
         }
     ]
