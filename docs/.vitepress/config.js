@@ -64,6 +64,7 @@ function sidebarLife() {
                 { text: '随手记', link: '/life/note' },
                 { text: '感想', link: '/life/thought' },
                 { text: '强者', link: '/life/强者' },
+                { text: '情绪', link: '/life/情绪' },
             ]
         }
     ]
