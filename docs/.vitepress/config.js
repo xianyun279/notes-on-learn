@@ -15,7 +15,6 @@ module.exports = {
         sidebar: {
             '/base/': sidebarBase(),
             '/framework/': sidebarFramework(),
-            '/life/': sidebarLife(),
         },
     }
 }
@@ -25,7 +24,6 @@ function nav() {
     return [
         { text: '基础', link: '/base/index' },
         { text: '框架', link: '/framework/index' },
-        { text: 'LIFE', link: '/life/index' },
     ]
 }
 
@@ -50,21 +48,6 @@ function sidebarFramework() {
             items: [
                 { text: 'Qwik', link: '/framework/Qwik' },
                 
-            ]
-        }
-    ]
-}
-
-function sidebarLife() {
-    return [
-        {
-            text: '随笔',
-            collapsible: true,
-            items: [
-                { text: '随手记', link: '/life/note' },
-                { text: '感想', link: '/life/thought' },
-                { text: '强者', link: '/life/强者' },
-                { text: '情绪', link: '/life/情绪' },
             ]
         }
     ]
