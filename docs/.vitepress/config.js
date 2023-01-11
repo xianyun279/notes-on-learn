@@ -60,6 +60,7 @@ module.exports = {
             '/base/': getChildren('./docs/base/'),
             // '/framework/': getChildren('./docs/framework/'),
             '/react/': getChildren('./docs/react/'),
+            '/algorithm/': getChildren('./docs/algorithm/'),
         },
     }
 }
@@ -69,6 +70,7 @@ function nav() {
     return [
         { text: 'React', link: '/react/index' },
         { text: '基础', link: '/base/index' },
+        {text: 'algorithm', link: '/algorithm/index'}
         // { text: '框架', link: '/framework/index' },
     ]
 }
