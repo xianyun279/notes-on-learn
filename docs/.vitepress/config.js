@@ -50,7 +50,7 @@ function readDirSync(path, root) {
 
 module.exports = {
     lang: 'en-US',
-    title: '闲云的网络笔记',
+    title: '个人技术文章',
     lastUpdated: true,
     themeConfig: {
         logo: '/logo.jpg',
@@ -88,6 +88,18 @@ function sidebarBase() {
     ]
 }
 
+
+function sidebarFramework() {
+    return [
+        {
+            text: '框架',
+            collapsible: true,
+            items: [
+                { text: 'Qwik', link: '/framework/Qwik' },
+            ]
+        }
+    ]
+}
 
 
 // function sidebarReact() {
