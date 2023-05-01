@@ -35,7 +35,7 @@ function readDirSync(path, root) {
                 readDirSync(path + ele, temp)
             } else {
                 if (ele.includes(".md")) {
-                    let link  = String(path + '/' + ele).split('docs')[1]
+                    let link = String(path + '/' + ele).split('docs')[1]
                     link = link.replace('//', '/')
                     root.items.push({ text: ele.split('.md')[0], link: link })
                 }
@@ -50,17 +50,19 @@ function readDirSync(path, root) {
 
 module.exports = {
     lang: 'en-US',
-    title: '闲云的网络笔记',
+    title: '笔记',
     lastUpdated: true,
     themeConfig: {
         logo: '/logo.jpg',
         nav: nav(),
         search: false,
         sidebar: {
-            '/base/': getChildren('./docs/base/'),
-            // '/framework/': getChildren('./docs/framework/'),
+            '/javascript/': getChildren('./docs/javascript/'),
+            '/基础/': getChildren('./docs/基础/'),
+            '/框架/': getChildren('./docs/框架/'),
             '/react/': getChildren('./docs/react/'),
-            '/algorithm/': getChildren('./docs/algorithm/'),
+            '/算法/': getChildren('./docs/算法/'),
+            '/业务/': getChildren('./docs/业务/'),
         },
     }
 }
@@ -68,37 +70,11 @@ module.exports = {
 
 function nav() {
     return [
+        { text: 'javascript', link: '/javascript/index' },
+        { text: '算法', link: '/算法/index' },
         { text: 'React', link: '/react/index' },
-        { text: '基础', link: '/base/index' },
-        {text: 'algorithm', link: '/algorithm/index'}
-        // { text: '框架', link: '/framework/index' },
+        { text: '基础', link: '/基础/index' },
+        { text: '框架', link: '/框架/index' },
+        { text: '业务', link: '/业务/index' },
     ]
 }
-
-function sidebarBase() {
-    return [
-        {
-            text: '基础',
-            collapsible: true,
-            items: [
-                { text: 'css-demo', link: '/base/css-demo' },
-                { text: 'js-utils', link: '/base/js-utils' }
-            ]
-        },
-    ]
-}
-
-
-
-// function sidebarReact() {
-//     return [
-//         {
-//             text: 'React',
-//             collapsible: true,
-//             items: [
-//                 { text: 'details', link: '/react/details' },
-//                 // { text: 'React', link: '/framework/React' },
-//             ]
-//         }
-//     ]
-// }
