@@ -1,0 +1,1 @@
+win32指的是windows API， linux 和unix 的接口设计标准是posix。
